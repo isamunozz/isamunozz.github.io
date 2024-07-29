@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="photos.css">
+    <title>Seattle '23</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="photos.html">HOME</a></li>
+                <li><a href="photos.html">RESUME</a></li>
+                <li><a href="photos.html#goals-values">GOALS & VALUES</a></li>
+                <li><a href="photos.html#journal-entries">JOURNAL ENTRIES</a></li>
+                <li><a href="photos.html#videos">VIDEOS</a></li>
+                <li><a href="photos.html" style="color: #C70D0D;">FILM PHOTOS</a></li>
+                <li><a href="photos.html#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="full-height">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/filmphotos/seattle1.jpg" alt="Chicago '23 Photo 1"></div>
+                    <div class="swiper-slide"><img src="images/filmphotos/seattle2.jpg" alt="Chicago '23 Photo 2"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
