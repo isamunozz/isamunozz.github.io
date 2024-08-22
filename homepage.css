@@ -10,7 +10,11 @@
   font-family: 'akzidenz';
   src: url(fonts/Akzidenz-grotesk-bold.ttf);
 }
-
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
 body {
   background-color: #000;
   color: #fff;
