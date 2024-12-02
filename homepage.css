@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'retropix';
   src: url(fonts/retropix.otf);
+  src: url('fonts/retropix.woff2') format('woff2'), 
+  url('fonts/retropix.woff') format('woff');
 }
 @font-face {
   font-family: 'sloop';
@@ -9,6 +11,11 @@
 @font-face {
   font-family: 'akzidenz';
   src: url(fonts/Akzidenz-grotesk-bold.ttf);
+}
+
+.box {
+  display: flex;
+  display: -webkit-flex; /* Safari fallback */
 }
 
 body {
@@ -40,6 +47,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; 
 }
 
 nav ul li {
@@ -87,6 +95,7 @@ h1 {
   align-self: flex-end;
   margin-bottom: -5rem;
   margin-right: -6.5rem; /* Adjust this value to move ISA more to the right */
+  word-wrap: break-word;
 }
 
 .last-name {
@@ -95,6 +104,7 @@ h1 {
   font-size: 12rem;
   margin-top: -1rem; /* Adjust this to control vertical spacing */
   margin-left: -15rem; /* Adjust this value to move Muñoz more to the left */
+  word-wrap: break-word;
 }
 
 .subtitle {
@@ -150,7 +160,7 @@ h1 {
 }
 
 .image-content {
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -215,3 +225,17 @@ h1 {
   align-self: center;
 }
 
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .text-content, .image-content {
+    width: 100%;
+  }
+
+  .first-name, .last-name {
+    font-size: 4rem;
+  }
+}
