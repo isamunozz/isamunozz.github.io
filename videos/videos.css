@@ -56,13 +56,15 @@
     background-color: #000000; /* Optional: background color change */
   }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full-page centering, adjust as needed */
+  .video-container {
+    text-align: center; /* Centers the iframe horizontally */
+    height: 100vh;      /* Optional: Full-page centering */
+    display: flex;      /* Ensures vertical centering */
+    justify-content: center;
+    align-items: center;
 }
 iframe {
-  width: 560px; /* Standard YouTube video width */
-  height: 315px; /* Standard YouTube video height */
+    width: 560px; /* Standard YouTube video width */
+    height: 315px; /* Standard YouTube video height */
 }
+
