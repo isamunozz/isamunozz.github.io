@@ -16,12 +16,12 @@
   }
 }
 
-.albums {
+/* .albums {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-}
+} */
 
 .album {
   text-align: center;
