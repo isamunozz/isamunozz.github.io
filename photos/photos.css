@@ -25,6 +25,9 @@
 
 .album {
   text-align: center;
+  display: inline-block; /* Aligns items horizontally */
+  margin: 10px; /* Adds space between albums */
+  text-align: center; 
 }
 
 .album img {
