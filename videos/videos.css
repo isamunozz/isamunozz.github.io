@@ -55,11 +55,14 @@
     color: #C70D0D; /* Color for the active page */
     background-color: #000000; /* Optional: background color change */
   }
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    
-  
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full-page centering, adjust as needed */
+}
+iframe {
+  width: 560px; /* Standard YouTube video width */
+  height: 315px; /* Standard YouTube video height */
 }
