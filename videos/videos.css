@@ -58,7 +58,7 @@
 
   .video-container {
     text-align: center; /* Centers the iframe horizontally */
-    height: autox;      /* Optional: Full-page centering */
+    height: auto;      /* Optional: Full-page centering */
     display: flex;      /* Ensures vertical centering */
     justify-content: center;
     align-items: center;
