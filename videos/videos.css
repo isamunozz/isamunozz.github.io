@@ -64,7 +64,7 @@
     align-items: center;
 }
 iframe {
-    width: 700px; /* Standard YouTube video width */
-    height: auto; /* Standard YouTube video height */
+    width: 800px; /* New width */
+    height: 450px; /* New height (16:9 aspect ratio) */
 }
 
