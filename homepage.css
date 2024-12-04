@@ -199,7 +199,7 @@ h1 {
 .image-content img {
   width: 100%;
   margin-bottom: 20px; 
-  margin-right: -700rem;
+  margin-right: -100rem;
   border-radius: 10px; /* Optional: To make the images have rounded corners */
 }
 
