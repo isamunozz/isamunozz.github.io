@@ -57,12 +57,12 @@
   }
 
   .video-container {
-    text-align: center; /* Centers the iframe horizontally */
-    height: auto;      /* Optional: Full-page centering */
-    display: flex;      /* Ensures vertical centering */
-    justify-content: center;
-    align-items: center;
+    width: 100%; /* Container takes full width of the page */
+    max-width: 1200px; /* Limit the maximum width of the video */
+    padding: 0 1rem; /* Optional padding for small screens */
+    box-sizing: border-box;
 }
+
 iframe {
     width: 800px; /* New width */
     height: 450px; /* New height (16:9 aspect ratio) */
