@@ -57,14 +57,16 @@
   }
 
   .video-container {
-    width: 100%; /* Container takes full width of the page */
-    max-width: 1200px; /* Limit the maximum width of the video */
-    padding: 0 1rem; /* Optional padding for small screens */
-    box-sizing: border-box;
+    display: flex;           /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;           /* Makes the container take up the full viewport height */
+    background-color: #000;  /* Optional: Background color for contrast */
 }
 
 iframe {
-    width: 800px; /* New width */
-    height: 450px; /* New height (16:9 aspect ratio) */
+    width: 800px;            /* Adjust width of the video */
+    height: 450px;           /* Adjust height (16:9 aspect ratio) */
 }
+
 
