@@ -1,19 +1,22 @@
+/* Fonts */
 @font-face {
   font-family: 'retropix';
-  src: url(fonts/retropix.otf);
+  src: url('./fonts/retropix.otf');
 }
 @font-face {
   font-family: 'sloop';
-  src: url(fonts/Sloop-ScriptThree\ 5.ttf);
+  src: url('./fonts/Sloop-ScriptThree 5.ttf');
 }
 @font-face {
   font-family: 'akzidenz';
-  src: url(fonts/Akzidenz-grotesk-bold.ttf);
+  src: url('./fonts/Akzidenz-grotesk-bold.ttf');
 }
+
+/* Global Styles */
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Akzidenz', sans-serif;
+  font-family: 'akzidenz', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -22,49 +25,50 @@ body {
   box-sizing: border-box;
 }
 
+/* Header and Navigation */
 header {
   padding: 1rem;
-  background-color: #000; /* Black background */
+  background-color: #000;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-  display: flex; /* Align items horizontally */
-  justify-content: center; /* Center the items */
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  margin: 0 2rem; /* Space between items */
+  margin: 0 2rem;
 }
 
 nav ul li a {
-  color: #fff; /* White color */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem; /* Font size */
+  font-size: 1.5rem;
 }
 
 nav ul li a.active {
-  color: #C70D0D; /* Red color for active links */
-  background-color: #000; /* Black background for active links */
+  color: #C70D0D;
+  background-color: #000;
 }
 
-/* Albums Carousel Styling */
+/* Albums Carousel */
 .albums {
   margin: 20px auto;
-  width: 80%; /* Adjust as needed for layout */
+  width: 80%;
+  text-align: center;
 }
 
 .album {
-  text-align: center;
   display: inline-block;
   margin: 10px;
 }
 
 .album img {
   width: 100%;
-  max-width: 300px; /* Adjust the max-width of the images */
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   transition: transform 0.2s;
@@ -80,4 +84,3 @@ nav ul li a.active {
   color: #C70D0D;
   margin-top: 0.5rem;
 }
-
