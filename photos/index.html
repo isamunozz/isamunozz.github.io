@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Photos</title>
     <link rel="stylesheet" href="photos.css">
+    <!-- Include Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -14,15 +17,14 @@
               <li><a href="/resume/">RESUME</a></li>
               <li><a href="/g&v/">GOALS & VALUES</a></li>
               <li><a href="/journal/">JOURNAL ENTRIES</a></li>
-              <li><a href="/videos/" >VIDEOS</a></li>
-              <li><a href="/photos/"class="active">FILM PHOTOS</a></li>
+              <li><a href="/videos/">VIDEOS</a></li>
+              <li><a href="/photos/" class="active">FILM PHOTOS</a></li>
               <li><a href="/contact/">CONTACT</a></li>
             </ul>
           </nav>      
     </header>
     <main>
         <section class="archive">
-            <!-- <h1>FILM ARCHIVE</h1> -->
             <div class="albums">
                 <div class="album">
                     <a href="album1.html">
@@ -42,8 +44,16 @@
                     </a>
                     <p>Home '23</p>
                 </div>
+                <!-- Add more albums as needed -->
             </div>
         </section>
     </main>
+    <!-- Include jQuery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Include Slick JS -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="photos.js"></script>
 </body>
 </html>

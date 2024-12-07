@@ -10,28 +10,28 @@
   font-family: 'akzidenz';
   src: url(fonts/Akzidenz-grotesk-bold.ttf);
 }
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
 }
 
-/* .albums {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-} */
+/* Albums Carousel Styling */
+.albums {
+  margin: 20px auto;
+  width: 80%; /* Adjust as needed for layout */
+}
 
 .album {
   text-align: center;
   display: inline-block; /* Aligns items horizontally */
-  margin: 10px; /* Adds space between albums */
-  text-align: center; 
+  margin: 10px;
+  text-align: center;
 }
 
 .album img {
-  max-width: 20%;
+  max-width: 100%; /* Ensures images adapt to carousel width */
   border-radius: 10px;
   transition: transform 0.2s;
 }
@@ -45,6 +45,20 @@
   font-size: 1.5rem;
   color: #C70D0D;
   margin-top: 0.5rem;
+}
+
+/* Slick Dots Styling */
+.slick-dots li button:before {
+  color: #C70D0D; /* Dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff; /* Active dot color */
+}
+
+.slick-prev, .slick-next {
+  color: #C70D0D; /* Arrow color */
+  z-index: 1000;
 }
 
 body {
@@ -84,44 +98,4 @@ nav ul li a {
 nav ul li a.active {
   color: #C70D0D;
   background-color: #000;
-}
-
-.full-height {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-container {
-  width: 80%;
-  height: 80%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  width: auto;
-  height: 100%;
-}
-
-.swiper-pagination-bullet {
-  background: #C70D0D;
-}
-
-.swiper-pagination-bullet-active {
-  background: #C70D0D;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #C70D0D;
 }
