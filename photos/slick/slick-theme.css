@@ -64,6 +64,26 @@
 }
 
 .slick-prev:before,
+
+.slick-track:before,
+/* Change Slick arrow colors */
+.slick-prev:before, 
+.slick-next:before {
+  color: #C70D0D; /* Set the arrow color to red */
+  font-size: 24px; /* Optional: Adjust arrow size */
+}
+
+/* Optional: Change arrow color on hover */
+.slick-prev:hover:before, 
+.slick-next:hover:before {
+  color: #fff; /* Change to white on hover */
+}
+
+/* Ensure arrows are visible */
+.slick-prev, 
+.slick-next {
+  z-index: 1000; /* Make sure arrows are above the slides */
+}
 .slick-next:before
 {
     font-family: 'slick';
