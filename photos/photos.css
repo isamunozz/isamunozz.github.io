@@ -79,18 +79,13 @@
   color: #C70D0D; /* Red color */
 }
 
-/* Limit the size of the slides */
-.slick-slide {
-  display: flex !important; /* Ensures proper alignment */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  max-height: 300px; /* Constrain the slide height */
-}
-
-.slick-slide img {
-  max-width: 100%; /* Restrict image width within the slide */
-  max-height: 300px; /* Restrict image height within the slide */
-  object-fit: contain; /* Keeps aspect ratio */
+/* Restrict image size inside album pages */
+.album-page img {
+  max-width: 80%; /* Scale down the width */
+  max-height: 300px; /* Scale down the height */
+  object-fit: cover; /* Keep aspect ratio while filling the space */
+  margin: 20px auto; /* Center with some spacing */
+  display: block; /* Ensure images stack vertically */
 }
 
 
