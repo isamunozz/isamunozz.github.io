@@ -1,16 +1,22 @@
 @font-face {
-    font-family: 'retropix';
-    src: url(fonts/retropix.otf);
+  font-family: 'retropix';
+  src: url(fonts/retropix.otf);
+}
+
+@font-face {
+  font-family: 'sloop';
+  src: url(fonts/Sloop-ScriptThree\ 5.ttf);
+}
+
+@font-face {
+  font-family: 'akzidenz';
+  src: url(fonts/Akzidenz-grotesk-bold.ttf);
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  @font-face {
-    font-family: 'sloop';
-    src: url(fonts/Sloop-ScriptThree\ 5.ttf);
-  }
-  @font-face {
-    font-family: 'akzidenz';
-    src: url(fonts/Akzidenz-grotesk-bold.ttf);
-  }
-  
+}
 
   
   .full-height {
