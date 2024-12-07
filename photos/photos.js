@@ -5,7 +5,7 @@ $(document).ready(function(){
       speed: 300,           // Transition speed
       slidesToShow: 3,      // Number of slides visible at once
       slidesToScroll: 1,
-      arrows: true,    // Number of slides scrolled at a time
+      arrows: true,  
       responsive: [
         {
           breakpoint: 1024, // At screen width <= 1024px
