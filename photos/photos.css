@@ -36,6 +36,9 @@
   transition: transform 0.2s;
 }
 
+
+
+
 .album img:hover {
   transform: scale(1.05);
 }
@@ -60,6 +63,36 @@
   color: #C70D0D; /* Arrow color */
   z-index: 1000;
 }
+/* Change arrow colors */
+.slick-prev, .slick-next {
+  color: #C70D0D; /* Red color matching your project */
+  z-index: 1000; /* Ensure arrows are above the slides */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #fff; /* Optional: Change to white on hover */
+}
+
+/* Optional: Adjust arrow size if needed */
+.slick-prev:before, .slick-next:before {
+  font-size: 24px; /* Adjust size */
+  color: #C70D0D; /* Red color */
+}
+
+/* Limit the size of the slides */
+.slick-slide {
+  display: flex !important; /* Ensures proper alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  max-height: 300px; /* Constrain the slide height */
+}
+
+.slick-slide img {
+  max-width: 100%; /* Restrict image width within the slide */
+  max-height: 300px; /* Restrict image height within the slide */
+  object-fit: contain; /* Keeps aspect ratio */
+}
+
 
 body {
   background-color: #000;
