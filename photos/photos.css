@@ -36,7 +36,14 @@
   transition: transform 0.2s;
 }
 
-
+/* Restrict image size more tightly */
+.album-page img {
+  max-width: 60%; /* Reduce size further */
+  max-height: 250px; /* Tighter height constraint */
+  object-fit: contain; /* Keep aspect ratio without cropping */
+  margin: 20px auto; /* Center with spacing */
+  display: block; /* Ensure images stack vertically */
+}
 
 
 .album img:hover {
@@ -79,14 +86,7 @@
   color: #C70D0D; /* Red color */
 }
 
-/* Restrict image size inside album pages */
-.album-page img {
-  max-width: 80%; /* Scale down the width */
-  max-height: 300px; /* Scale down the height */
-  object-fit: cover; /* Keep aspect ratio while filling the space */
-  margin: 20px auto; /* Center with some spacing */
-  display: block; /* Ensure images stack vertically */
-}
+
 
 
 body {
