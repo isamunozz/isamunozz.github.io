@@ -8,9 +8,10 @@
   src: url('./fonts/Sloop-ScriptThree 5.ttf');
 }
 @font-face {
-  font-family: 'akzidenz';
-  src: url('./fonts/Akzidenz-grotesk-bold.ttf');
+  font-family: 'Akzidenz-Grotesk-Bold';
+  src: url('fonts/Akzidenz-grotesk-bold.ttf') format('truetype');
 }
+
 
 /* Global Styles */
 body {
