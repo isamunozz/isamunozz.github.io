@@ -102,7 +102,7 @@ main {
 }
 
 .resume {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     margin-top: 3rem; /* Add spacing between images */
     border-radius: 10px; /* Optional: To make the images have rounded corners */
@@ -113,7 +113,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
     width: 100%;  /* Full width of the parent container */
     height: 100%; /* Full height of the parent container */
 }
