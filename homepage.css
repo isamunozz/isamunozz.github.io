@@ -30,18 +30,33 @@ body {
   box-sizing: border-box;
 }
 
-.full-height {
-  height: 100vh; /* This makes the main section take up the full viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 header {
   padding: 1rem;
+  padding-bottom: 4rem;
 }
 
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo {
+  height: auto;
+  max-height: 90vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center; /*centers the image*/
+}
+.logo img { /* Targets the img inside the logo div */
+  max-width: 100%; /* Adjust percentage as needed */
+  height: auto;
+  max-height: 90vh; /*Adjust as needed*/
+  display: block;
+  margin: 0 auto;
+  padding: 10vh;
+}
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -86,73 +101,7 @@ nav ul li:first-child a {
     }
 }
 
-
-main {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.name-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-h1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
-  margin: 0;
-}
-
-.first-name {
-  font-family: 'akzidenz', sans-serif;
-  font-size: 8rem;
-  align-self: flex-end;
-  margin-bottom: -5rem;
-  margin-right: -6.5rem; /* Adjust this value to move ISA more to the right */
-  word-wrap: break-word;
-}
-
-.last-name {
-  font-family: 'sloop', cursive;
-  font-weight: 100;
-  font-size: 12rem;
-  margin-top: -1rem; /* Adjust this to control vertical spacing */
-  margin-left: -15rem; /* Adjust this value to move Muñoz more to the left */
-  word-wrap: break-word;
-}
-
-.subtitle {
-  font-family: 'retropix';
-  font-size: 2rem;
-  color: #C70D0D;
-  margin-top: -1.5rem;
-  letter-spacing: -0.05em; /* Adjust this value to squish letters together */
-  word-spacing: 1em; 
-}
-
-.ampersand {
-  font-family: 'sloop', cursive;
-  color: white;
-  font-size: 4.5rem; /* Adjust this size as needed */
-  vertical-align: middle;
-  letter-spacing: normal;
-}
-
-.bible-verse {
-  font-family: 'akzidenz', monospace;
-  margin-top: 2rem;
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  border-radius: 20px;
-}
+/* Remove main styles */
 
 /* New and updated CSS */
 .who-is-isa {
@@ -224,29 +173,6 @@ h1 {
   border-radius: 10px; /* Optional: To make the images have rounded corners */
 }
 
-/* Specific placement for the images 
-.image1 {
-  max-width: 70%;
-  height: auto;
-  align-self: flex-start;
-}
-
-/* .image2 {
-  max-width: 40%;
-  height: auto;
-  margin-right: -30rem;
-  /*align-self: flex-end;
-  margin-bottom: -1.rem;
-} */
-/* 
-.image3 {
-  max-width: 60%;
-  margin-right: 50rem;
-  margin-bottom: 2rem;
-  height: auto;
-  align-self: center; 
-} */
-
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
@@ -256,8 +182,10 @@ h1 {
   .text-content, .image-content {
     width: 100%;
   }
-
-  .first-name, .last-name {
-    font-size: 4rem;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 90vw; /* Adjust for smaller screens */
+    max-height: 70vh;
   }
 }
