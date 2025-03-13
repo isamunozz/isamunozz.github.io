@@ -27,13 +27,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 }
-  .full-height {
-    height: 100vh; /* This makes the main section take up the full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   header {
     padding: 1rem;
   }
@@ -60,24 +54,43 @@ body {
     background-color: #000000; /* Optional: background color change */
   }
 
-
-
-/* Center the video container horizontally and vertically */
-.video-container {
-  flex: 1; /* Ensures it takes up available vertical space */
-  display: flex; /* Enables Flexbox */
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Style the iframe to make the video responsive */
-iframe {
-  width: 800px; /* Desired width of the video */
-  height: 450px; /* 16:9 aspect ratio for YouTube videos */
-  max-width: 100%; /* Ensure the video scales on smaller screens */
-  max-height: 100%; /* Prevent overflow on smaller screens */
+.full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.resume {
+    max-width: 50%;
+    height: auto;
+    margin-top: 3rem; /* Add spacing between images */
+    border-radius: 10px; /* Optional: To make the images have rounded corners */
+}
+
+/* Add this new class for image centering */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;  /* Full width of the parent container */
+    height: 100%; /* Full height of the parent container */
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
 
 
 
