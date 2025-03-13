@@ -57,6 +57,21 @@ header {
   margin: 0 auto;
   padding-bottom: 10vh;
 }
+
+.whois {
+  height: auto;
+  max-height: 50vh;
+  display: flex;
+  margin: 0 auto;
+}
+.whois img { /* Targets the img inside the logo div */
+  max-width: 100%; /* Adjust percentage as needed */
+  height: auto;
+  max-height: 90vh; /*Adjust as needed*/
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+}
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -104,6 +119,7 @@ nav ul li:first-child a {
 /* Remove main styles */
 
 /* New and updated CSS */
+
 .who-is-isa {
   background-color: black;
   color: white;
