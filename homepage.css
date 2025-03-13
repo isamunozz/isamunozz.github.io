@@ -65,6 +65,28 @@ nav ul li:first-child a {
   color: #C70D0D;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul li {
+    margin: 0 0.5rem; /* Further reduced margin */
+  }
+
+  nav ul li a {
+    font-size: 1rem; /* Further reduced font size */
+  }
+}
+
+@media (max-width: 480px){
+    nav ul li {
+        margin: .2rem;
+    }
+    nav ul li a{
+        font-size: .8rem;
+        padding: .2rem;
+    }
+}
+
+
 main {
   flex-grow: 1;
   display: flex;

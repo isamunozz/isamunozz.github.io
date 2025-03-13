@@ -13,6 +13,7 @@
     margin: 0;
     list-style: none;
     text-align: center;
+    color:  #C70D0D
 }
 
 .slick-dots li {
@@ -23,6 +24,7 @@
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
+    color:  #C70D0D;
 }
 
 .slick-dots li button {
@@ -37,6 +39,7 @@
     border: 0;
     color: transparent;
     outline: none;
+    color:  #C70D0D;
 }
 
 .slick-dots li button:before {
@@ -54,9 +57,10 @@
     color: black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color:  #C70D0D;
 }
 
 .slick-dots li.slick-active button:before {
     opacity: 0.75;
-    color: black;
+    color:  #C70D0D;
 }

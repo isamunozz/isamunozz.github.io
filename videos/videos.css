@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'retropix';
   src: url(fonts/retropix.otf);
+  src: url('fonts/retropix.woff2') format('woff2'), 
+  url('fonts/retropix.woff') format('woff');
 }
 @font-face {
   font-family: 'sloop';
@@ -10,15 +12,15 @@
   font-family: 'akzidenz';
   src: url(fonts/Akzidenz-grotesk-bold.ttf);
 }
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+
+.box {
+  display: flex;
+  display: -webkit-flex; /* Safari fallback */
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: #000;
+  color: #fff;
   font-family: 'akzidenz', sans-serif;
   margin: 0;
   padding: 0;
@@ -28,31 +30,62 @@ body {
   box-sizing: border-box;
 }
 
-  header {
-    padding: 1rem;
-  }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
+.full-height {
+  height: 100vh; /* This makes the main section take up the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+nav ul li {
+  margin: 0 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav ul li:first-child a {
+  color: #C70D0D;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   nav ul li {
-    margin: 0 2rem;
+    margin: 0 0.5rem; /* Further reduced margin */
   }
-  
+
   nav ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem; /* Further reduced font size */
   }
-  
-  nav ul li a.active {
-    color: #C70D0D; /* Color for the active page */
-    background-color: #000000; /* Optional: background color change */
-  }
+}
+
+@media (max-width: 480px){
+    nav ul li {
+        margin: .2rem;
+    }
+    nav ul li a{
+        font-size: .8rem;
+        padding: .2rem;
+    }
+}
+
 
 /* videos.css */
 
