@@ -88,6 +88,12 @@ body {
   padding: 10px;
 }
 
+/* ... (your existing CSS) ... */
+
+.video-title {
+  padding: 10px; /* Padding for the title */
+}
+
 @media (max-width: 768px) {
   .video-window {
     width: 45%;
