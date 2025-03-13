@@ -112,11 +112,26 @@ nav ul li a {
 
 .album p {
   font-family: 'sloop', cursive;
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #C70D0D;
   margin-top: 0.5rem;
 }
+h1 {
+  text-align: center; /* Add this line */
+}
+.word1 {
+  font-family: 'akzidenz';
+  font-size: 5rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
 
+.word2 {
+  font-family: 'retropix';
+  font-size: 4.5rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
 /* Swiper Styles */
 .swiper-container {
   width: 80%; /* Adjust the overall container width */
