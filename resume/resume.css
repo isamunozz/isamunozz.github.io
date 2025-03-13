@@ -61,7 +61,7 @@
     font-size: 1.5rem;
   }
   
-  nav ul li:first-child a {
+  .active {
     color: #C70D0D;
   }
   
