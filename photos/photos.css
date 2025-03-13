@@ -12,7 +12,6 @@
   src: url('fonts/Akzidenz-grotesk-bold.ttf') format('truetype');
 }
 
-
 /* Global Styles */
 body {
   background-color: #000;
@@ -84,4 +83,27 @@ nav ul li a.active {
   font-size: 1.5rem;
   color: #C70D0D;
   margin-top: 0.5rem;
+}
+
+/* Swiper Styles */
+.swiper-container {
+  width: 80%; /* Adjust the overall container width */
+  max-width: 1000px; /*optional max width*/
+  height: 80vh; /* Adjust height as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+.swiper-slide img {
+  width: auto;
+  max-width: 100%; /* Constrain image width */
+  height: auto;
+  max-height: 100%; /* Constrain image height */
+  display: block; /* Remove potential extra spacing */
+  margin: 0 auto; /*Center the image*/
+}
+
+.full-height {
+  height: 100vh; /*make the section fill the whole viewport*/
+  display: flex;
+  align-items: center;
 }
