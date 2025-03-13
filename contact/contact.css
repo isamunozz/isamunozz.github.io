@@ -19,8 +19,8 @@
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: 'akzidenz', sans-serif;
   margin: 0;
   padding: 0;
@@ -55,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
@@ -104,7 +104,7 @@ main {
 }
 
 .film-strip img {
-  max-width: 100%; /* Make image responsive */
+  max-width: 50%; /* Make image responsive */
   height: auto;
 }
 
