@@ -30,6 +30,14 @@ body {
   box-sizing: border-box;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  flex-grow: 1; /* Add this line */
+}
+
 .full-height {
   height: 100vh; /* This makes the main section take up the full viewport height */
   display: flex;
@@ -86,12 +94,6 @@ nav ul li a {
     }
 }
 
-  .content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
 
 .journal-window {
   width: 355.6px;
@@ -107,6 +109,7 @@ nav ul li a {
   padding: 10px;
   margin: 0; /*Remove default margin*/
   font-family:'sloop' ;
+  size: 57px;
 }
 
 
