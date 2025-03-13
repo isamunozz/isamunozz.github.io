@@ -86,17 +86,37 @@ nav ul li:first-child a {
     }
 }
 
-  
-  .full-height {
-    height: 100vh; /* This makes the main section take up the full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.journal-window {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.journal-title {
+  padding: 10px;
+  margin: 0; /*Remove default margin*/
+  font-family:'sloop' ;
+}
+
+
+@media (max-width: 768px) {
+  .video-window {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+    .video-window {
+        width: 90%;
+    }
 }
