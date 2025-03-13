@@ -55,7 +55,7 @@ header {
   max-height: 90vh; /*Adjust as needed*/
   display: block;
   margin: 0 auto;
-  padding: 10vh;
+  padding-bottom: 10vh;
 }
 nav ul {
   list-style-type: none;
