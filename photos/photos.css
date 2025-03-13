@@ -36,22 +36,45 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allows links to wrap onto new lines */
 }
 
 nav ul li {
-  margin: 0 2rem;
+  margin: 0 1rem; /* Reduced margin for better spacing on smaller screens */
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Slightly reduced font size */
+  padding: 0.5rem; /* Add padding for better touch target */
 }
 
 nav ul li a.active {
   color: #C70D0D;
   background-color: #000;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul li {
+    margin: 0 0.5rem; /* Further reduced margin */
+  }
+
+  nav ul li a {
+    font-size: 1rem; /* Further reduced font size */
+  }
+}
+
+@media (max-width: 480px){
+    nav ul li {
+        margin: .2rem;
+    }
+    nav ul li a{
+        font-size: .8rem;
+        padding: .2rem;
+    }
 }
 
 /* Albums Carousel */
