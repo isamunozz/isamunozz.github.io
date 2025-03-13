@@ -1,18 +1,23 @@
-/* Fonts */
 @font-face {
   font-family: 'retropix';
-  src: url('./fonts/retropix.otf');
+  src: url(fonts/retropix.otf);
+  src: url('fonts/retropix.woff2') format('woff2'), 
+  url('fonts/retropix.woff') format('woff');
 }
 @font-face {
   font-family: 'sloop';
-  src: url('./fonts/Sloop-ScriptThree 5.ttf');
+  src: url(fonts/Sloop-ScriptThree\ 5.ttf);
 }
 @font-face {
-  font-family: 'Akzidenz-Grotesk-Bold';
-  src: url('fonts/Akzidenz-grotesk-bold.ttf') format('truetype');
+  font-family: 'akzidenz';
+  src: url(fonts/Akzidenz-grotesk-bold.ttf);
 }
 
-/* Global Styles */
+.box {
+  display: flex;
+  display: -webkit-flex; /* Safari fallback */
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -25,10 +30,16 @@ body {
   box-sizing: border-box;
 }
 
-/* Header and Navigation */
+.full-height {
+  height: 100vh; /* This makes the main section take up the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   padding: 1rem;
-  background-color: #000;
 }
 
 nav ul {
@@ -36,24 +47,22 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Allows links to wrap onto new lines */
+  flex-wrap: wrap; 
 }
 
 nav ul li {
-  margin: 0 1rem; /* Reduced margin for better spacing on smaller screens */
+  margin: 0 2rem;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem; /* Slightly reduced font size */
-  padding: 0.5rem; /* Add padding for better touch target */
+  font-size: 1.5rem;
 }
 
-nav ul li a.active {
+nav ul li:first-child a {
   color: #C70D0D;
-  background-color: #000;
 }
 
 /* Media Queries for Responsiveness */
