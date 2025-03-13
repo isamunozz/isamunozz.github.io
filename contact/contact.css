@@ -104,7 +104,7 @@ main {
 }
 
 .film-strip img {
-  max-width: 50%; /* Make image responsive */
+  max-width: 30%; /* Make image responsive */
   height: auto;
 }
 
